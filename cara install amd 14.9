@@ -1,0 +1,14 @@
+1. download driver yang cocok dengan OS
+Xorg/Xserver 7.4 and above (up to 1.15)
+Linux kernel 2.6 or above (up to 3.13)
+glibc version 2.2 or 2.3
+2. cek vga lspci -vvnn | grep VGA
+3. cek x-org chech.sh di folder download driver ./check.sh
+4. cek kernel uname -a
+Xorg -version
+ldd --version
+5.sudo apt-get install cdbs dh-make dkms execstack dh-modaliases linux-headers-generic libqtgui4 xserver-xorg-dev
+5a. kalo pake 64 bit instal juga sudo apt-get install lib32gcc1
+6.install dengan ketik sudo ./amd-catalyst-14-9-linux-x86-x86-64.zip
+7. DO NOT REBOOT THE COMPUTER! Run "aticonfig --initial" if you have a single device or "aticonfig --adapter=all --initial -f" if you are running multiple graphics adapters eg. crossfire.
+
